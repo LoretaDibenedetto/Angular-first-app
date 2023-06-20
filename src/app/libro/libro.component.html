@@ -8,33 +8,18 @@
                    aria-describedby="emailHelp"
                    [(ngModel)] = "inputString">
                    <p>{{inputString}}</p>  <span>Titolo</span>| <span>Autore</span>| <span>Prezzo</span>-->
-                   <div class="card-group ">
+                  <div class="col-7 m-auto mt-5">
                     <div class="card border-dark">
-                      <img src="..." class="card-img-top" alt="...">
+                    
                       <div class="card-body">
-                        <h5 class="card-title">Titolo</h5>
-                        <p class="card-text">Autore</p>
-                        <p class="card-text"><small class="text-body-secondary">Prezzo</small></p>
-                        <button class="btn btn-outline-primary" (click)="onClick()">Cliccami!</button>
+                        <h5 class="card-title">{{ book.title }}</h5>
+                        <p class="card-text">{{book.author}}</p>
+                        <p class="card-text"><small class="text-body-secondary">{{book.price}}</small></p>
+                     
                       </div>
                     </div>
-                    <div class="card border-dark">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Titolo</h5>
-                        <p class="card-text">Autore</p>
-                        <p class="card-text"><small class="text-body-secondary">Prezzo</small></p>
-                      </div>
                     </div>
-                    <div class="card border-dark">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Titolo</h5>
-                        <p class="card-text">Autore</p>
-                        <p class="card-text"><small class="text-body-secondary">Prezzo</small></p>
-                      </div>
-                    </div>
-                  </div>
+                 
            
       </div>
     

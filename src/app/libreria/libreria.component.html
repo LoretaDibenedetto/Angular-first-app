@@ -1,14 +1,16 @@
 
 <div class="container mt-3">
         <app-titolo></app-titolo>
-        <app-libro></app-libro>
-        <app-libro></app-libro>
-        <app-libro></app-libro>
-    
-
+        
+        
+        <app-inserimento-libro (bookAdded)="onBookAdded($event)"></app-inserimento-libro>
+        
+        <!--cicla l'array books e grazie alla string interpolations aggiunge l'elemento nel titolo-->
+        <app-libro *ngFor="let  book  of books" [book]="book"></app-libro>
+        
   
        
-  
+    <!--<app-libro [book]="'1984'"></app-libro>-->
 
     </div>
  

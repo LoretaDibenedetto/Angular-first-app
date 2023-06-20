@@ -7,6 +7,7 @@ import { LibroComponent } from './libro/libro.component';
 import { LibreriaComponent } from './libreria/libreria.component';
 import { TitoloComponent } from './titolo/titolo.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { InserimentoLibroComponent } from './inserimento-libro/inserimento-libro.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     LibroComponent,
     LibreriaComponent,
     TitoloComponent,
-    NavbarComponent
+    NavbarComponent,
+    InserimentoLibroComponent
   ],
   imports: [
     BrowserModule,

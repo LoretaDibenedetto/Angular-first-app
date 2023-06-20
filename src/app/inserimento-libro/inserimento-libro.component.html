@@ -1,0 +1,17 @@
+
+
+
+<div class="col-6 mt-3 m-auto">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Inserisci il titolo di un libro" [(ngModel)]="inputTitle">
+      
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Inserisci l'Autore del libro" [(ngModel)]="inputAuthor">
+       
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Inserisci il prezzo del libro" [(ngModel)]="inputPrice">
+    </div>
+   <button class="btn btn-outline-secondary " (click)="onAddBook()" type="button" id="button-addon2">Button</button>
+</div>

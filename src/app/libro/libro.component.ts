@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'app-libro',
@@ -7,7 +7,14 @@ import { Component } from "@angular/core";
 })
 export class LibroComponent {
 inputString = '';
-onClick(){
-    alert('clicked');
-}
+
+//accessibile dall'esterno
+@Input() book: {title: string, author: string, price:number} ={
+    title:'',
+    author:'',
+    price: 0
+};
+
+
+
 }
