@@ -1,0 +1,17 @@
+.border{
+    border: 2px solid black;
+   
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  19px 19px 37px #d9d9d9,
+                 -19px -19px 37px #ffffff;
+   
+    border-radius: 25px;
+  
+}
+
+.line{
+    border-bottom: 1px solid #9b9b9b;
+
+    width: 200px;
+    align-items: center;
+}
