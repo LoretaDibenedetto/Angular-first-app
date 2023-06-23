@@ -8,6 +8,26 @@ import { LibreriaComponent } from './libreria/libreria.component';
 import { TitoloComponent } from './titolo/titolo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InserimentoLibroComponent } from './inserimento-libro/inserimento-libro.component';
+import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
+import { AuthorsComponent } from './pages/authors/authors.component';
+import { BookComponent } from './pages/book/book.component';
+
+/*percorsi applicazione*/
+const appRoutes: Routes = [
+  {
+  path: '',
+  component: HomeComponent
+},{
+  path: 'autori',
+  component: AuthorsComponent
+},{
+  path:'book',
+  component: BookComponent
+}
+
+]
+
 
 @NgModule({
   declarations: [
@@ -16,11 +36,15 @@ import { InserimentoLibroComponent } from './inserimento-libro/inserimento-libro
     LibreriaComponent,
     TitoloComponent,
     NavbarComponent,
-    InserimentoLibroComponent
+    InserimentoLibroComponent,
+    HomeComponent,
+    AuthorsComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
