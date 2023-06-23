@@ -24,6 +24,9 @@ const appRoutes: Routes = [
 },{
   path:'book',
   component: BookComponent
+},{
+  path:'book/:id',
+  component:BookComponent
 }
 
 ]
